@@ -16,7 +16,7 @@ h2 {
     text-align: center;
     font-family: 'Gothic A1', sans-serif;
 }
-header {
+#header-home {
     height: 90vh;
     background-image: url(img/mobile.jpg);
     background-repeat: no-repeat;
@@ -24,8 +24,17 @@ header {
     background-size: cover; /* Resize the background image to cover the entire container */
     color: rgb(231, 231, 231);
 }
+#header-comment {
+    height: 40vh;
+    color: rgb(231, 231, 231);
+}
 header h1 {
     margin-top: 40%;
+    font-weight: 800;
+    text-shadow: 1px 1px 3px #000;
+}
+#header-comment h1 {
+    margin-top: 25%;
     font-weight: 800;
     text-shadow: 1px 1px 3px #000;
 }
@@ -50,7 +59,11 @@ header h4 {
 }
 
 @media only screen and (min-width: 768px) {
-    header {
+    #header-home {
+        background-image: url(img/desktop.jpg);
+        background-position: left top; /* Center the image */
+    }
+    #header-comments {
         background-image: url(img/desktop.jpg);
         background-position: left top; /* Center the image */
     }
